@@ -14,7 +14,7 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnConfirmTaskButtonClicked(object sender, EventArgs e)
+	private void TaskScreenButtonClicked(object sender, EventArgs e)
 	{
 		//string taskText = taskInput.Text;
 		//int taskTime = Int32.Parse(deadlineInput.Text);
@@ -25,6 +25,9 @@ public partial class MainPage : ContentPage
 		//(string, int, int) task1Data = TasksOfToday.head.data;
 		//(string, int, int) task2Data = TasksOfToday.head.next.data;
 		//(string, int, int) task3Data = TasksOfToday.head.next.next.data;
+
+		FirstTaskText.Text = "Button Clicked";
+		
 
 
     }
