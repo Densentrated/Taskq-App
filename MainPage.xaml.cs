@@ -22,9 +22,9 @@ public partial class MainPage : ContentPage
 
 		//TasksOfToday.AddObjectiveByTime((taskText, taskTime, taskDurration));
 
-		(string, int, int) task1Data = TasksOfToday.head.data;
-		(string, int, int) task2Data = TasksOfToday.head.next.data;
-		(string, int, int) task3Data = TasksOfToday.head.next.next.data;
+		//(string, int, int) task1Data = TasksOfToday.head.data;
+		//(string, int, int) task2Data = TasksOfToday.head.next.data;
+		//(string, int, int) task3Data = TasksOfToday.head.next.next.data;
 
 
     }

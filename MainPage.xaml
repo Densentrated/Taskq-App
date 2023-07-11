@@ -11,14 +11,21 @@
             HorizontalOptions="Fill">
 
             <Grid
-                x:Name="taskInputGrid"
-                ColumnSpacing="6"
-                RowSpacing="4">
+                ColumnSpacing="14"
+                RowSpacing="14"
+                RowDefinitions="160, 160, 160, 160"
+                ColumnDefinitions="1*, 320">
 
-                <Grid.RowDefinitions>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                </Grid.ColumnDefinitions>
+                <BoxView 
+                    Grid.Column="0"
+                    Grid.RowSpan="4"
+                    Color="Green" />
+
+                <BoxView
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Color="AliceBlue"/>
+
 
 
             </Grid>
