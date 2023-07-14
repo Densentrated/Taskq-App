@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Taskq_App_Revised.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Taskq_App_Revised"
+    xmlns:views="clr-namespace:Taskq_App_Revised.Views"
+    Shell.FlyoutBehavior="Disabled">    
+    
+    <ShellContent
+                Title="DashBoard"
+                ContentTemplate="{DataTemplate views:DashBoardPage}"/>
+    
+    <ShellContent
+            Title="Add Tasks"
+            ContentTemplate="{DataTemplate views:AddTasksPage}"
+            Route="MainPage"/>
+        
+</Shell>
