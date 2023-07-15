@@ -3,10 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Taskq_App_Revised.Views.PageSample"
              Title="PageSample">
+
+    <!--Page Resources / Variables-->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:String x:Key="PaddingSize">8</x:String>
+            <x:String x:Key="FontSize">16</x:String>
+            <x:String x:Key="GlobalCurveRadius">0</x:String>
+            <x:String x:Key="TaskBoxWidth">320</x:String>
+            <x:String x:Key="TaskBoxHeight">140, 140, 140, 230</x:String>
+            <x:String x:Key="BorderColor">Black</x:String>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <VerticalStackLayout>
         <Label 
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Grid
+                ColumnSpacing="{StaticResource PaddingSize}"
+                RowSpacing="{StaticResource PaddingSize}"
+                RowDefinitions="{StaticResource TaskBoxHeight}"
+                ColumnDefinitions="1*, 320">
+
+            <!--Page Resources / Variables-->
+
+        </Grid>
     </VerticalStackLayout>
 </ContentPage>

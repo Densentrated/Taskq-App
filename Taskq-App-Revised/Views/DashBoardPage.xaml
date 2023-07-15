@@ -41,11 +41,17 @@
                     CornerRadius="{StaticResource GlobalCurveRadius}">
 
                     <BoxView.GestureRecognizers>
-                        <SwipeGestureRecognizer Direction="Left" Swiped="OnTaskBoxSwiped"/>
+                        <SwipeGestureRecognizer Direction="Up" Swiped="OnTaskBoxSwiped"/>
                     </BoxView.GestureRecognizers>
                 </BoxView>
 
-                <Label
+                <Button
+                    Grid.Column="0"
+                    Grid.RowSpan="4"
+                    Clicked="OnPageChangeButtonClicked">
+                </Button>
+
+                        <Label
                     Grid.Column="0"
                     Grid.Row="1"
                     Grid.RowSpan="2"

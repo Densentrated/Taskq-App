@@ -13,7 +13,6 @@
     
     <ShellContent
             Title="Add Tasks"
-            ContentTemplate="{DataTemplate views:AddTasksPage}"
-            Route="MainPage"/>
+            ContentTemplate="{DataTemplate views:AddTasksPage}"/>
         
 </Shell>

@@ -7,8 +7,13 @@ public partial class DashBoardPage : ContentPage
 		InitializeComponent();
 	}
 
-	public void OnTaskBoxSwiped(object sender, SwipedEventArgs e)
-	{ 
-		
+	public async void OnTaskBoxSwiped(object sender, SwipedEventArgs e)
+	{
+		await Navigation.PushAsync(new AddTasksPage());
 	}
+
+	public async void OnPageChangeButtonClicked(object sender, EventArgs e)
+	{
+        await Navigation.PushAsync(new AddTasksPage());
+    }
 }
